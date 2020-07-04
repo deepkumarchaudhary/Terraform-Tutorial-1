@@ -8,15 +8,15 @@
                     {
                       git branch: 'master', url: 'https://github.com/deepkumarchaudhary/Terraform-Tutorial-1.git'
                       sh 'cd EC2withJenkins '
-                      sh 'terraform --version'
-                      sh 'terraform init -upgrade=true -get=true -input=false -force-copy'
-                      sh 'terraform workspace new "terraform-demo"'
+                      sh 'sudo terraform --version'
+                      sh 'sudo terraform init -upgrade=true -get=true -input=false -force-copy'
+                      sh 'sudo terraform workspace new "terraform-demo"'
                       sh 'echo "INFO: New terraform-demo workspace added."'
-                      sh 'terraform workspace select terraform-demo'
+                      sh 'sudo terraform workspace select terraform-demo'
                       sh 'echo "INFO: Terraform -> Planning..."'
-                      sh 'terraform plan -out plan_terraform -lock=true'
+                      sh 'sudo terraform plan -out plan_terraform -lock=true'
                       sh 'echo "INFO: Terraform -> Executing..."'
-                      sh 'terraform apply plan_plan_terraform'
+                      sh 'sudo terraform apply plan_plan_terraform'
                     }
                   }
                 }

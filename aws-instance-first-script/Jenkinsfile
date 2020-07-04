@@ -4,8 +4,8 @@
            stage('terraform-Demo') {
                steps {
                  script {
-                   dir("ta-setup")
-                    {
+                   //dir("ta-setup")
+                    //{
                       git branch: 'master', url: 'https://github.com/deepkumarchaudhary/Terraform-Tutorial-1.git'
                       sh 'cd EC2withJenkins '
                       sh 'sudo terraform --version'
@@ -17,7 +17,7 @@
                       sh 'sudo terraform plan -out plan_terraform -lock=true'
                       sh 'echo "INFO: Terraform -> Executing..."'
                       sh 'sudo terraform apply plan_plan_terraform'
-                    }
+                    //}
                   }
                 }
               }

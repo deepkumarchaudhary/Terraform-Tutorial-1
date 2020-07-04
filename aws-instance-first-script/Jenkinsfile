@@ -8,6 +8,7 @@
                     {
                       git branch: 'master', url: 'https://github.com/deepkumarchaudhary/Terraform-Tutorial-1.git'
                       sh 'cd EC2withJenkins '
+                      sh 'terraform --version'
                       sh 'terraform init -upgrade=true -get=true -input=false -force-copy'
                       sh 'terraform workspace new "terraform-demo"'
                       sh 'echo "INFO: New terraform-demo workspace added."'

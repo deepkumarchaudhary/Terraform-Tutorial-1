@@ -1,8 +1,6 @@
 provider "aws" {
   region	=	"ap-south-1"
-  access_key	=	"AKIAWWZBKFBQHMAPAYQF"
-  secret_key	=	"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"
-  #version	=	"~> 2.0"
+  version	=	"~> 2.0"
 }
 
 resource "aws_instance" "terraformtraining" {

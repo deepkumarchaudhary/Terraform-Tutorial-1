@@ -7,7 +7,12 @@ resource "aws_instance" "user_data_example_input_file" {
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   # key name
-  key_name = var.key_name
+  #key_name = var.key_name
+  connection {
+    user        = "ec2-user"
+    private_key = "${file("${var.private_key_path}")}"
+      host = "${aws_instance.user_data_example_input_file.public_ip}"
+  }
   user_data = "${file("apache_config.sh")}"
 
   tags = {

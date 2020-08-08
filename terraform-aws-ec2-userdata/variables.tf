@@ -1,8 +1,4 @@
-variable "access_key" { }
-variable "secret_key" { }
-variable "region" {
-  type    = "string"
-  default = "ap-south-1"
+variable "accen" {
 }
 variable "ami_id" {
   type = "map"
@@ -15,7 +11,11 @@ variable "instance_type" {
   type    = "string"
   default = "t2.micro"
 }
-variable "key_name" {
+variable "private_key_path" {
+  default = "mynewkeypair.pem"
+}
+
+/*variable "key_name" {
   type    = "string"
   default = "ec2-demo"
-}
+}*/

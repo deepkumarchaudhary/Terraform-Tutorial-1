@@ -2,7 +2,7 @@ resource "aws_subnet" "private_1" {
   vpc_id     = aws_vpc.vpc_3Tier.id
   map_public_ip_on_launch = false
   cidr_block = "10.0.3.0/24"
-  availability_zone = var.availability_zone.1a
+  availability_zone = var.availability_zone.a
 
   tags = {
     Name = "private_1-3Tier"
@@ -12,7 +12,7 @@ resource "aws_subnet" "private_2" {
   vpc_id     = aws_vpc.vpc_3Tier.id
   map_public_ip_on_launch = false
   cidr_block = "10.0.4.0/24"
-  availability_zone = var.availability_zone.1b
+  availability_zone = var.availability_zone.b
 
   tags = {
     Name = "private_2-3Tier"

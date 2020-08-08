@@ -3,8 +3,8 @@ variable "secret_key" {}
 variable "availability_zone" {
   type = "string"
   description = "List of Avaibability Zones (e.g. `['ap-south-1a', 'ap-south-1b']`)"
-  1a  = "ap-south-1a"
-  1b  = "ap-south-1b"
+  a  = "ap-south-1a"
+  b  = "ap-south-1b"
 }
 /*variable "availability_zones" {
   type        = list(string)

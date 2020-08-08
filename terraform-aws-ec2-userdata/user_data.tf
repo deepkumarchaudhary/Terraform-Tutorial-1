@@ -1,4 +1,3 @@
-
 resource "aws_instance" "user_data_example" {
   ami           = lookup(var.ami_id, var.region)
   instance_type = var.instance_type
@@ -12,7 +11,7 @@ resource "aws_instance" "user_data_example" {
 
   user_data = <<EOF
 		#! /bin/bash
-                sudo yum update -y
+    sudo yum update -y
 		sudo yum install -y httpd.x86_64
 		sudo service httpd start
 		sudo service httpd enable

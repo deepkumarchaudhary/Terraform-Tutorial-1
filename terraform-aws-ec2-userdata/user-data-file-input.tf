@@ -1,4 +1,3 @@
-
 resource "aws_instance" "user_data_example_input_file" {
   ami           = lookup(var.ami_id, var.region)
   instance_type = var.instance_type

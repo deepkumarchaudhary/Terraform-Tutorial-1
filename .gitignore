@@ -5,6 +5,6 @@
 *.tfstate
 *.tfstate.*
 *.pem
-
+*.txt
 # .tfvars files
 *.tfvars

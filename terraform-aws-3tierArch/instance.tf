@@ -5,7 +5,7 @@ resource "aws_instance" "web1" {
 # Public Subnet assign to instance
   subnet_id     = aws_subnet.public_1.id
 
-resource "aws_instance" "web2" {
+/*resource "aws_instance" "web2" {
   ami           = lookup(var.ami_id, var.region)
   instance_type = var.instance_type
 
@@ -14,7 +14,7 @@ resource "aws_instance" "web2" {
 
 # Security group assign to instance
   vpc_security_group_ids=[aws_security_group.allow_ssh.id]
-
+*/
 # key name
 connection {
   user        = "ec2-user"

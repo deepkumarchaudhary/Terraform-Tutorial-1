@@ -4,7 +4,7 @@ variable "region" {
   default = "ap-south-1"
 }
 variable "private_key_path" {
-  default = "terraform.pem"
+  default = "mynewkeypair.pem"
 }
 
 variable "ami_id" {

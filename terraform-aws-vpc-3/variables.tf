@@ -10,7 +10,7 @@ variable "private_key_path" {
 variable "ami_id" {
   type = "map"
   default = {
-    ap-south-1 = "ami-052c08d70def0ac62"
+    ap-south-1     = "ami-052c08d70def0ac62"
     ap-southeast-1 = "ami-0615132a0f36d24f4"
   }
 }
@@ -30,12 +30,12 @@ variable "tags" {
   description = "A map of tags to add to all resources"
   type        = string
   default     = "Vpc-custom-demo"
- #location    = "Mumbai"
+  #location    = "Mumbai"
 }
 
 variable "subnet_cidr" {
-  type        = "list"
-  default     = ["190.160.1.0/24","190.160.2.0/24","190.160.3.0/24"]
+  type    = "list"
+  default = ["190.160.1.0/24", "190.160.2.0/24", "190.160.3.0/24"]
 }
 
 #variable "azs" {

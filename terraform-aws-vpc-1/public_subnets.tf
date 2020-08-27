@@ -1,5 +1,5 @@
 resource "aws_subnet" "public_1" {
-  vpc_id     = ${aws_vpc.vpc_demo.id}
+  vpc_id     = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = true
   cidr_block = "190.160.1.0/24"
 

@@ -30,5 +30,5 @@ variable "tags" {
   description = "A map of tags to add to all resources"
   type        = string
   default     = "Vpc-custom-demo"
-  location    = "Mumbai"
+ #location    = "Mumbai"
 }
